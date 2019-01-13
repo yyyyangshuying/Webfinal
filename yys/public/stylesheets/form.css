@@ -1,0 +1,27 @@
+.getCode {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #006699;
+    font-size: 14px;
+}
+.login-now,.register-now {
+    display: block;
+    margin-top: 10px;
+    padding-right: 10px;
+    text-align: right;
+    font-size: 14px;
+    color: #006699;
+}
+.mui-button-row .register-button,.login-button{
+    background: #006699;
+    width: 90%;
+}
+.mui-input-group:after {
+    height: 0px!important;
+}
+.mui-input-row label,
+.mui-input-row label~input {
+    font-size: 14px;
+}

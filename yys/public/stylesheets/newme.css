@@ -1,0 +1,31 @@
+body{
+    background-image: url("../images/58.jpg");
+    background-repeat: repeat;
+}
+.mui-input-group{
+    margin-top: 80px;
+}
+.mui-bar-nav~.mui-content{
+    padding-top: 0px;
+}
+.my-header h1{
+    color: #613b3b;
+}
+.mui-input-group .mui-button-row{
+    height: 60px;
+}
+.tixing{
+    box-sizing: border-box;
+    color:red;
+}
+#warning{
+    position:absolute;
+    top:10px;
+    right:60px;
+    color:red;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    text-decoration: none;
+
+}

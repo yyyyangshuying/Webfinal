@@ -1,0 +1,48 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport',content='width=device-width',initial-scale='1.0')
+        title login
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
+        link(rel='stylesheet', href='/stylesheets/form.css')
+        link(rel='stylesheet', href='/stylesheets/public.css')
+        link(rel='stylesheet', href='/stylesheets/mui.min.css')
+        link(rel='stylesheet', href='/stylesheets/newme.css')
+        script(type='text/javascript',src='/javascripts/mui.min.js')
+        script(type='text/javascript',src='/javascripts/list.js')
+        script(type='text/javascript', src='/javascripts/zepto.min.js')
+        script(type='text/javascript', src='/javascripts/zepto.min.js')
+        script(type='text/javascript', src='/javascripts/baocuo.js')
+
+    body
+       //header(class=['mui-bar', 'mui-bar-nav', 'my-header'])
+       //  a(class=['mui-bar','mui-bar-nav','my-header'])
+       //  h1.mui-title 欢迎登陆
+       div.mui-content
+          form.mui-input-group(action='/login', method='post')
+            div.mui-input-row
+               label 用户名
+               input#name(class='mui-input-clear', type='text', placeholder='请输入用户名', name='userName')
+            div.mui-input-row
+               label 密码
+               input#password(class='mui-input-password', type='password', placeholder='请输入密码', name='passWord')
+            div(class=['mui-button-row'])
+               button#btn(class=['mui-btn',' mui-btn-primary', 'login-button'] , onclick="return validpwd()") 登陆
+               div.tixing #{err}
+            a.register-now(href='/register') 立即注册
+
+                script.
+                    $(function () {
+                        name = $("#name").text();
+                        $("#btn").on("click", function () {
+                            jump2();
+                        });
+                    });
+                    function jump2() {
+                        document.cookie = "name=" + name;
+                        document.cookie = "age=" + age;
+                        window.location.href = "home.html";
+                    }
+

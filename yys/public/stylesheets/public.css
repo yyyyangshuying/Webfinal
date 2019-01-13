@@ -1,0 +1,108 @@
+/*公共样式*/
+body, .mui-content {
+    background: #fff;
+}
+ul {
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a {
+    color: #000;
+}
+/*头部样式*/
+.my-header {
+    background-color: #848d9e;
+}
+.my-header h1 {
+    color: #fff
+}
+.my-header .mui-icon {
+    color: #fff;
+}
+/*商品分类部分样式*/
+.nav-links a {
+    width: 33.333%;
+    float: left;
+}
+.nav-links a img{
+    width: 100%;
+    display: block;
+}
+/*品牌专区样式*/
+.brand .title {
+    width: 100%;
+}
+.brand ul li{
+    width: 25%;
+    float: left;
+}
+.brand ul li a{
+    display: block;
+    margin: 10% 20%;
+}
+.brand ul li a img{
+    width: 100%;
+}
+/*产品部分样式（包括沙发和卧室）*/
+.product .title{
+    width: 100%;
+}
+.product ul li {
+    width: 50%;
+    float: left;
+    padding: 5px;
+}
+.product ul li a {
+    display: block;
+    box-shadow: 0 0 5px #ccc;
+    padding: 5px;
+}
+.product ul li img {
+    width: 100%;
+}
+.product ul li .product-name {
+    display: block;
+    color: #8f8f94;
+    font-size: 14px;
+    text-align: center;
+    line-height: 18px;
+    height: 38px;
+    overflow: hidden;
+    padding: 5px;
+}
+.product ul li p {
+    text-align: center;
+    padding-top: 6px;
+}
+.product ul li p span:first-child {
+    color: #f20;
+    padding-right: 2px;
+}
+.product ul li p span:last-child {
+    text-decoration: line-through;
+    padding-left: 2px;
+}
+.product ul li .buy {
+    display: block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #848d9e;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 4px;
+    margin: 0 auto 5px auto;
+}
+/*底部样式*/
+.my-footer {
+    background-color: #848d9e;
+}
+.my-footer .mui-tab-item {
+    color: #FFF;
+}
+.my-footer .mui-tab-item.mui-active {
+    color: #41555c;
+}

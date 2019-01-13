@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/form.css">
+    <link rel="stylesheet" href="/stylesheets/public.css">
+    <link rel="stylesheet" href="/stylesheets/mui.min.css">
+    <link rel="stylesheet" href="/stylesheets/newme.css">
+    <script type="text/javascript" src="/javascripts/mui.min.js"></script>
+    <script type="text/javascript" src="/javascripts/list.js"></script>
+    <script type="text/javascript" src="/javascripts/zepto.min.js"></script>
+    <script type="text/javascript" src="/javascripts/zhuce.js"></script>
+  </head>
+</html>
+<body>
+  <header class="mui-bar mui-bar-nav my-header"><a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+    <h1 class="mui-title">欢迎注册</h1>
+  </header>
+  <div class="mui-content">
+    <form class="mui-input-group" action="/register" method="post">
+
+      <div class="mui-input-row">
+        <label>用户名</label>
+        <input class="mui-input-clear" id="userName" type="text" placeholder="请输入用户名" name="userName">
+      </div>
+      <div class="mui-input-row">
+        <label>密码</label>
+        <input class="mui-input-password" id="passWord" type="password" placeholder="请输入密码" name="passWord">
+      </div>
+
+
+      <div class="mui-button-row">
+        <button class="mui-btn mui-btn-primary register-button" onclick="return oneset()">注册</button>
+        <div></div>
+      </div>
+    </form><a class="login-now" href="/login"></a>
+  </div>
+</body>

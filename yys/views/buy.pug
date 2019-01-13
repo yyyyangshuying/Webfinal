@@ -1,0 +1,103 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title 订单
+        meta(name='viewport', content='initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+        link(rel='stylesheet', href='/stylesheets/mycss/amazeui.min1.css')
+        link(rel='stylesheet', href='/stylesheets/mycss/style1.css')
+        script(type='text/javascript', src='js/jquery.min.js')
+        script(type='text/javascript', src='js/amazeui.min.js')
+        link(rel='stylesheet', href='/stylesheets/mycss/iconfont.css')
+        link(href='/stylesheets/mycss/mui.min.css', rel='stylesheet')
+        link(rel='stylesheet', href='/stylesheets/mycss/iconfont.css')
+        link(rel='stylesheet', href='/stylesheets/mycss/style.css')
+        link(rel='stylesheet', href='/stylesheets/mycss/iconfont.css')
+        link(rel='stylesheet', href='/stylesheets/mycss/new.css')
+    body
+        header.am-header.am-header-default.header(data-am-widget='header', style='background-color: #7142a5;')
+            .am-header-left.am-header-nav
+                a(href='#left-link')
+                    i.am-header-icon.am-icon-angle-left
+            h1.am-header-title(style='line-height: 45px;')
+                a(href='#title-link', style='color: white;') 全部订单
+            .am-header-right.am-header-nav
+                a(href='#right-link')
+        .cate-search(style='position: relative; top: 0; border-bottom: 0;')
+            input.cate-input(type='text', placeholder='搜索全部订单')
+            input.cate-btn(type='button ')
+        ul.order-style
+            li.current
+                a(href='allorder.html') 全部
+            li
+                a(href='') 待付款
+            li
+                a(href='') 待收货
+            li
+                a(href='') 待评价
+            li
+                a(href='') 退换货
+        .c-comment
+            span.c-comment-num 订单编号：150916517682
+            span.c-comment-suc 待付款
+        .c-comment-list(style='border: 0;')
+            a.o-con(href='')
+                .o-con-img
+                    img(src='images/detail.png')
+                .o-con-txt
+                    p 卤香滑鸡
+                    p.price ￥88
+                    p
+                        | 合计：
+                        span ￥176.00
+                .o-con-much
+                    h4 x2
+            .c-com-money
+                | 花5个商品 实付金额：
+                span ￥ 175.00
+        .c-com-btn
+            a(href='tureorder.html') 立即支付
+            a(href='') 取消订单
+        .clear
+        .c-comment
+            span.c-comment-num 订单编号：150916517682
+            span.c-comment-suc 卖家已发货
+        .c-comment-list(style='border: 0;')
+            a.o-con(href='')
+                .o-con-img
+                    img(src='images/detail.png')
+                .o-con-txt
+                    p 卤香滑鸡
+                    p.price ￥88
+                    p
+                        | 合计：
+                        span ￥176.00
+                .o-con-much
+                    h4 x2
+            .c-com-money
+                | 花5个商品 实付金额：
+                span ￥ 175.00
+        .c-com-btn
+            a(href='') 确认收货
+        .clear
+
+
+
+        nav.mui-bar.mui-bar-tab
+            a.mui-tab-item(href='/index')
+                span.mui-icon.mui-icon-home
+                span.mui-tab-label 首页
+            a.mui-tab-item.mui-active(href='/buy')
+                span.mui-icon.iconfont.icon-dingdan
+                    span.mui-badge(style='display: none;') 1
+                span.mui-tab-label 订单
+            a.mui-tab-item(href='/share')
+                span.mui-icon.iconfont.icon-faxian
+                span.mui-tab-label 发现
+            a.mui-tab-item(href='/home')
+                span.mui-icon.iconfont.icon-wode
+                span.mui-tab-label 我的
+        script(type='text/javascript').
+            mui('body').on('tap','a',function(){
+                window.top.location.href=this.href;
+            });

@@ -1,0 +1,68 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport',content='width=device-width',initial-scale='1.0')
+        title index
+        link(rel='stylesheet', href='/stylesheets/mycss/mui.min.css')
+        link(rel='stylesheet', href='/stylesheets/mycss/iconfont.css')
+        link(rel='stylesheet', href='/stylesheets/mycss/style.css')
+        link(rel='stylesheet', href='/stylesheets/mycss/new.css')
+        script(type='text/javascript', src='/javascripts/myjs/mui.min.js')
+body
+    header(class=['mui-bar', 'mui-bar-nav', 'home-nav'])
+        h1.mui-title 我的
+    div.mui-content
+        div.home-div
+            div.home-div-top
+                div.home-div-top-l
+                    img(src="images/user.png" alt="" )
+                div.home-div-top-r
+                    h4 Ann
+                    p 这个用户没有留下任何的信息哦~
+                    span(class=['mui-icon',' mui-icon-arrowright',' right-icon'])
+
+            div.home-list
+                div(class=['home-list-div', 'public-list-txt'])
+                    ul.mui-table-view
+                        li.mui-table-view-cell
+                           a.mui-navigate-right
+                              span(class=['mui-icon', 'iconfont', 'icon-shoucang01', 'list-l-icon', 'home-2'])
+                              span 我的通知
+                        li.mui-table-view-cell
+                           a.mui-navigate-right
+                              span(class=['mui-icon', 'iconfont', 'icon-shangcheng', 'list-l-icon home-4'])
+                              span 我的地址
+                div(class=['home-list-div', 'public-list-txt'])
+                    ul.mui-table-view
+                        li.mui-table-view-cell
+                           a.mui-navigate-right
+                              span(class=['mui-icon', 'iconfont', 'icon-fuwuzhongxin', 'list-l-icon home-5'])
+                              span 意见反馈
+                        li.mui-table-view-cell
+                           a.mui-navigate-right
+                               span(class=['mui-icon', 'iconfont', 'icon-shangjiab', 'list-l-icon home-6'])
+                               span 我的购物车
+                        li.mui-table-view-cell
+                           a.mui-navigate-right
+                               span(class=['mui-icon', 'iconfont', 'icon-xiangce', 'list-l-icon', 'home-3'])
+                               span 设置
+    nav.mui-bar.mui-bar-tab
+        a.mui-tab-item(href='/index')
+            span.mui-icon.mui-icon-home
+            span.mui-tab-label 首页
+        a.mui-tab-item(href='/buy')
+            span.mui-icon.iconfont.icon-dingdan
+                span.mui-badge(style='display: none;') 1
+            span.mui-tab-label 订单
+        a.mui-tab-item(href='/share')
+            span.mui-icon.iconfont.icon-faxian
+            span.mui-tab-label 发现
+        a.mui-tab-item.mui-active(href='/home')
+            span.mui-icon.iconfont.icon-wode
+            span.mui-tab-label 我的
+
+    script(type = 'text/javascript').
+        mui('body').on('tap', 'a', function () {
+            window.top.location.href = this.href;
+        });

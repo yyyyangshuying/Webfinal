@@ -1,0 +1,41 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width', initial-scale='1.0')
+        title login
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
+        link(rel='stylesheet', href='/stylesheets/form.css')
+        link(rel='stylesheet', href='/stylesheets/public.css')
+        link(rel='stylesheet', href='/stylesheets/mui.min.css')
+        link(rel='stylesheet', href='/stylesheets/newme.css')
+        script(type='text/javascript', src='/javascripts/mui.min.js')
+        script(type='text/javascript', src='/javascripts/list.js')
+        script(type='text/javascript', src='/javascripts/zepto.min.js')
+        script(type='text/javascript', src='/javascripts/zhuce.js')
+body
+    header(class=['mui-bar','mui-bar-nav','my-header'])
+          a(class=['mui-action-back','mui-icon','mui-icon-left-nav','mui-pull-left'])
+          h1.mui-title 欢迎注册
+    div.mui-content
+        form.mui-input-group(action='/register' , method='post')
+            div.mui-input-row
+                label 用户名
+                input#userName(type='text', class='mui-input-clear', placeholder='请输入用户名', name='userName')
+
+            div.mui-input-row
+                label 密码
+                input#passWord(type='password', class='mui-input-password', placeholder='请输入密码', name='passWord')
+            div.mui-input-row
+                label 确认密码
+                input#repassWord(class='mui-input-password', type='password', placeholder='确认密码', name='repassWord', onblur="check()")
+                span#warning
+
+            div.mui-button-row
+                button(class=['mui-btn','mui-btn-primary', 'register-button'], onclick="return oneset() ;") 注册
+                div #{err}
+        a.login-now(href='/login')
+
+
+

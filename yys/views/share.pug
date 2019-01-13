@@ -1,0 +1,150 @@
+doctype html
+html
+    head
+        meta(charset='utf-8')
+        title 发现
+        meta(name='viewport', content='initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
+        link(rel='stylesheet', href='/stylesheets/mycss/amazeui.min1.css')
+        link(rel='stylesheet', href='/stylesheets/mycss/style1.css')
+        script(type='text/javascript', src='/javascripts/myjs/jquery.min.js')
+        script(type='text/javascript', src='/javascripts/myjs/amazeui.min.js')
+        script(src='/javascripts/myjs/mui.min.js')
+        script(src='http://libs.baidu.com/jquery/1.10.2/jquery.min.js')
+        script(type='text/javascript', src='/javascripts/jquery.goup.min.js')
+        link(href='/stylesheets/mycss/mui.min.css', rel='stylesheet')
+        link(rel='stylesheet', href='/stylesheets/mycss/iconfont.css')
+        link(rel='stylesheet', href='/stylesheets/mycss/style.css')
+        link(rel='stylesheet', href='/stylesheets/mycss/new.css')
+    body
+        header(class=['mui-bar', 'mui-bar-nav', 'my-header'])
+            a(class=['mui-action-back', 'mui-icon', 'mui-icon-left-nav', 'mui-pull-left'])
+            h1.mui-title 分享圈
+        .am-slider.am-slider-default(data-am-widget='slider', data-am-slider='{}')
+            ul.am-slides
+                li
+                    img(src='images/banner3.png')
+                li
+                    img(src='images/banner4.png')
+        .am-intro.am-cf.am-intro-default(data-am-widget='intro')
+            .am-intro-hd
+                h2.am-intro-title(style='line-height: 45px;') 我有话要说
+            .am-g.am-intro-bd
+                a(href='content.html')
+                    .am-intro-left.am-u-sm-3
+                        img(src='images/logo.png')
+                    .am-intro-right.am-u-sm-9
+                        h3
+                            strong 五种果汁喝出美丽
+                        p 吐血推荐5款让你喝出健康的果汁
+                        .text
+                            span.fl 2017-5-23
+                            span.fr
+                                i.am-icon-thumbs-o-up
+                                |  点赞
+            .am-g.am-intro-bd
+                a(href='content.html')
+                    .am-intro-left.am-u-sm-3
+                        img(src='images/logo.png')
+                    .am-intro-right.am-u-sm-9
+                        h3
+                            strong 五种果汁喝出美丽
+                        p 吐血推荐5款让你喝出健康的果汁
+                        .text
+                            span.fl 2017-5-23
+                            span.fr
+                                i.am-icon-thumbs-o-up
+                                |  点赞
+            .am-g.am-intro-bd
+                a(href='content.html')
+                    .am-intro-left.am-u-sm-3
+                        img(src='images/logo.png')
+                    .am-intro-right.am-u-sm-9
+                        h3
+                            strong 五种果汁喝出美丽
+                        p 吐血推荐5款让你喝出健康的果汁
+                        .text
+                            span.fl 2017-5-23
+                            span.fr
+                                i.am-icon-thumbs-o-up
+                                |  点赞
+            .am-g.am-intro-bd
+                a(href='content.html')
+                    .am-intro-left.am-u-sm-3
+                        img(src='images/logo.png')
+                    .am-intro-right.am-u-sm-9
+                        h3
+                            strong 五种果汁喝出美丽
+                        p 吐血推荐5款让你喝出健康的果汁
+                        .text
+                            span.fl 2017-5-23
+                            span.fr
+                                i.am-icon-thumbs-o-up
+                                |  点赞
+            .am-g.am-intro-bd
+                a(href='content.html')
+                    .am-intro-left.am-u-sm-3
+                        img(src='images/logo.png')
+                    .am-intro-right.am-u-sm-9
+                        h3
+                            strong 五种果汁喝出美丽
+                        p 吐血推荐5款让你喝出健康的果汁
+                        .text
+                            span.fl 2017-5-23
+                            span.fr
+                                i.am-icon-thumbs-o-up
+                                |  点赞
+            .am-g.am-intro-bd
+                a(href='content.html')
+                    .am-intro-left.am-u-sm-3
+                        img(src='images/logo.png')
+                    .am-intro-right.am-u-sm-9
+                        h3
+                            strong 五种果汁喝出美丽
+                        p 吐血推荐5款让你喝出健康的果汁
+                        .text
+                            span.fl 2017-5-23
+                            span.fr
+                                i.am-icon-thumbs-o-up
+                                |  点赞
+            .am-g.am-intro-bd
+                a(href='content.html')
+                    .am-intro-left.am-u-sm-3
+                        img(src='images/logo.png')
+                    .am-intro-right.am-u-sm-9
+                        h3
+                            strong 五种果汁喝出美丽
+                        p 吐血推荐5款让你喝出健康的果汁
+                        .text
+                            span.fl 2017-5-23
+                            span.fr
+                                i.am-icon-thumbs-o-up
+                                |  点赞
+        .h50
+        nav.mui-bar.mui-bar-tab
+            a.mui-tab-item(href='/index')
+                span.mui-icon.mui-icon-home
+                span.mui-tab-label 首页
+            a.mui-tab-item(href='/buy')
+                span.mui-icon.iconfont.icon-dingdan
+                    span.mui-badge(style='display: none;') 1
+                span.mui-tab-label 订单
+            a.mui-tab-item.mui-active(href='/share ')
+                span.mui-icon.iconfont.icon-faxian
+                span.mui-tab-label 发现
+            a.mui-tab-item(href='/home')
+                span.mui-icon.iconfont.icon-wode
+                span.mui-tab-label 我的
+        script(type='text/javascript').
+            mui('body').on('tap','a',function(){
+                window.top.location.href=this.href;
+            });
+        script(type='text/javascript').
+            $(document).ready(function () {
+                $.goup({
+                    trigger: 100,
+                    bottomOffset: 150,
+                    locationOffset: 100,
+                    title: 'top',
+                    titleAsText: true
+                });
+            });

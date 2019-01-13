@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale="1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/form.css">
+    <link rel="stylesheet" href="/stylesheets/public.css">
+    <link rel="stylesheet" href="/stylesheets/mui.min.css">
+    <link rel="stylesheet" href="/stylesheets/newme.css">
+    <script type="text/javascript" src="/javascripts/mui.min.js"></script>
+    <script type="text/javascript" src="/javascripts/list.js"></script>
+    <script type="text/javascript" src="/javascripts/zepto.min.js"></script>
+    <script type="text/javascript" src="/javascripts/zepto.min.js"></script>
+    <script type="text/javascript" src="/javascripts/baocuo.js"></script>
+  </head>
+  <body>
+    <!--header(class=['mui-bar', 'mui-bar-nav', 'my-header'])-->
+    <!--  a(class=['mui-bar','mui-bar-nav','my-header'])-->
+    <!--  h1.mui-title 欢迎登陆-->
+    <div class="mui-content">
+      <form class="mui-input-group" action="/login" method="post">
+        <div class="mui-input-row">
+          <label>用户名</label>
+          <input class="mui-input-clear" type="text" placeholder="请输入用户名" name="userName">
+        </div>
+        <div class="mui-input-row">
+          <label>密码</label>
+          <input class="mui-input-password" id="password" type="password" placeholder="请输入密码" name="passWord">
+        </div>
+        <div class="mui-button-row">
+          <button class="mui-btn  mui-btn-primary login-button" onclick="return validpwd()">登陆</button>
+          <div class="tixing"></div>
+        </div><a class="register-now" href="/register">立即注册</a>
+      </form>
+    </div>
+  </body>
+</html>
